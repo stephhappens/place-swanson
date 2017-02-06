@@ -1,0 +1,14 @@
+.top-nav {
+  display: flex;
+  background: transparent;
+  width: 100%;
+
+  &__group {
+    display: flex;
+    margin: -1rem;
+  }
+  &__item {
+    margin: 0;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+.hero {
+  background: $c-secondary;
+  color: $c-primary;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+&__heading {
+  border: .1rem solid $c-primary;
+  font-size: 5rem;
+  padding: 3rem 1rem;
+}
+}
