@@ -3,11 +3,20 @@
 }
 
 .swanson__container-images {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   width: 100%;
-  object-fit: cover;
 
   &__img {
-    width: 4rem;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    margin: 1rem;
+    object-fit: cover;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
   }
 }
