@@ -3,10 +3,26 @@
 }
 
 .swanson__container-images {
-  display: flex;
+  display: block;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: auto;
   width: 100%;
+
+  &-frame {
+    border: 0.5rem white solid;
+    position: relative;
+    min-height: 10rem;
+  }
+
+  // &-frame img {
+  //   position: absolute;
+  //   height: 100%;
+  //   width: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   object-fit: cover;
+  // }
 
   &__img {
     flex-basis: calc(100% / 3 - 1rem - 1rem);
@@ -19,4 +35,16 @@
       padding-top: 100%;
     }
   }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.column {
+  min-width: 16rem;
+  margin: 1rem;
+  flex-grow: 1;
 }
