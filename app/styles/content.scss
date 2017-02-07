@@ -1,0 +1,13 @@
+.swanson__link-list, a {
+  text-decoration: none;
+}
+
+.swanson__container-images {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+  &__img {
+    width: 4rem;
+  }
+}
